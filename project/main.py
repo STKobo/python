@@ -1,3 +1,6 @@
+import numpy  
+
+
 # On vous donne une list n, parcourez cette liste et affichez ses valeurs
 def display_list(ma_liste: list):
     for i in ma_liste:
@@ -25,7 +28,15 @@ def display_hundred_int():
 # generez des nombres random, ajoutez les dans un tableau et faites la moyenne des notes.
 # Si la note, est en dessous de 10 (exclu), affichez "Non admin", sinon, "admin"
 def mention_moyenne():
-    print("TODO")
+    liste_note : list = []
+    for i in range(0, 6):
+        liste_note[i] = numpy.random.uniform(0, 20.01)
+    somme : float = 0.0
+    for i in liste_note: 
+        somme += i
+    result : float = somme / len(liste_note)
+    print("La moyenne des notes est : ", str(result))
+        
 
 
 # Affichez le nombre de voyelle que comporte un mot saisie par l'utilisateur
