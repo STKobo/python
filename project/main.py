@@ -18,7 +18,8 @@ def display_word_str(un_mot : str):
 
 # Completez la fonction afin qu'elle puisse nous afficher les 100 premiers nombres entiers
 def display_hundred_int():
-    print("TODO")
+    for i in range(0, 100):
+        print(str(i))
 
 
 # generez des nombres random, ajoutez les dans un tableau et faites la moyenne des notes.
