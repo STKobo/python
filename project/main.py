@@ -13,7 +13,8 @@ def display_list(ma_liste: list):
 #En python, les str sont egalement des tableau. des tableau de caractères
 #Avec cette information, afficher chaque lettre d'une phrase donnée en parametre
 def display_word_str(un_mot : str):
-    print("TODO")
+    for letter in un_mot:
+        print(letter)
 
 # Completez la fonction afin qu'elle puisse nous afficher les 100 premiers nombres entiers
 def display_hundred_int():
