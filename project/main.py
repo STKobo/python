@@ -30,7 +30,7 @@ def display_hundred_int():
 def mention_moyenne():
     liste_note : list = []
     for i in range(0, 6):
-        liste_note[i] = numpy.random.uniform(0, 20.01)
+        liste_note.append(numpy.random.uniform(0, 20.01))
     somme : float = 0.0
     for i in liste_note: 
         somme += i
