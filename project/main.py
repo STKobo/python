@@ -4,7 +4,10 @@ def display_list(ma_liste: list):
         print(i)
     #deuxieme ecriture 
     for i in range(len(ma_liste)):
-        print("terminer")
+        print("la valeur est "+ ma_liste[i])
+    #troisième ecriture 
+    for index, value in enumerate(ma_liste):
+        print("la valeur " + value + " est présente à l'index " + index)
 
 
 #En python, les str sont egalement des tableau. des tableau de caractères
