@@ -55,3 +55,16 @@ def table_multiplication():
 # Pour rappel, la factorielle de 5 vaux (1*2*3*4*5)
 def factorielle():
     print("TODO")
+
+
+#dictionnaire
+mon_dictionnaire: dict = { 
+    'age' : 20,
+    'cheveux': 'cheveux noir',
+    'taille' : 1.2}
+
+result = mon_dictionnaire.get('login')
+if result is None: 
+    print("il est null")
+else: 
+    print (result)
