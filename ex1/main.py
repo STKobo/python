@@ -1,3 +1,4 @@
+from ex1.Hero import Hero
 from ex1.Person import Person
 
 
@@ -65,4 +66,8 @@ def major_minor():
 
 if __name__ == '__main__':
     person: Person = Person('toto', 'titi')
+    goku : Person = Hero('Son', 'Goku','Saiyan')
+    spiderman : Hero = Hero('Parker', 'Peter', 'Spiderman')
     print(person.imc())
+    print("le nom par défaut est : ", person.nom)
+    person.nom = 'jacky'

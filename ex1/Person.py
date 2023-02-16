@@ -24,4 +24,10 @@ class Person:
     def imc(self):
         return self._poid / math.pow(self._taille, 2)
 
-    
+    @property
+    def nom(self) :
+        return self._nom 
+
+    @nom.setter 
+    def nom(self, new_nom : str) : 
+        self._nom = new_nom 
