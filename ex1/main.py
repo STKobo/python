@@ -1,8 +1,12 @@
+from ex1.Person import Person
+
+
 def list_to_dict():
     #Nous avons deux listes, il suffit de les convertir en dictionnaire Python
     list_key : list = ['key_un', 'key_deux', 'key_trois']
     list_value : list = ['value_un', 'value_deux', 'value_trois']
     
+    # 1ere ecriture
     #dict_data = dict(zip(list_key, list_value))
     #print(str(dict_data))
 
@@ -60,4 +64,5 @@ def major_minor():
     print('test')
 
 if __name__ == '__main__':
-    list_to_dict()
+    person: Person = Person('toto', 'titi')
+    print(person.imc())
